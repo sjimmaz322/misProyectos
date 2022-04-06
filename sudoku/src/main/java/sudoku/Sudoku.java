@@ -41,4 +41,17 @@ public class Sudoku {
         }
         return false;
     }
+    private static boolean numEnCelda(int[][] tablero,int fila, int columna, int numero) {
+
+        int filaCelda = fila - fila%3;
+        int columnaCelda = columna - columna%3;
+        
+        for (int i = filaCelda; i < filaCelda+3; i++) {
+            for (int j = columnaCelda; j < columnaCelda+3; j++) {
+                if (tablero[i][j] == numero){
+                    return true;
+                }
+            }
+        }return false;
+    }
 }
