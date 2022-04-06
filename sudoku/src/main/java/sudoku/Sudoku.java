@@ -26,9 +26,9 @@ public class Sudoku {
         imprimirSudoku(tablero);
 
         if (resolverSudoku(tablero)) {
-            System.out.println("\nEl Sudoku ha sido resuelto");
+            System.out.println("\nEl Sudoku ha sido resuelto\n");
         } else {
-            System.out.println("\nEl sudoku no puede resolverse");
+            System.out.println("\nEl sudoku no puede resolverse\n");
         }
 
         imprimirSudoku(tablero);
